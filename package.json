@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "dev": "tsnd --respawn --transpile-only src/server.ts --ignore-watch /node_modules/",
-    "typeorm": "tsnd /node_modules/typeorm/cli.js",
+    "typeorm": "tsnd node_modules/typeorm/cli.js",
     "test": "jest"
   },
   "dependencies": {

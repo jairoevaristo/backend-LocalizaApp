@@ -1,5 +1,5 @@
 {
-  "type": "mysql",
+  "type": "sqlite",
   "database": "src/database/database.sqlite",
   "entities": [
      "src/entities/*.ts"
@@ -8,7 +8,6 @@
      "src/migrations/*.ts"
   ],
   "cli": {
-    "entitiesDir": "src/entities",
-    "migrationsDir": "src/migrations"
+    "migrationsDir": "src/database/migrations"
   }
 }
