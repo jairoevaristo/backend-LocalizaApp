@@ -2,13 +2,13 @@
   "type": "mysql",
   "database": "src/database/database.sqlite",
   "entities": [
-     "src/entity/**/*.ts"
+     "src/entities/*.ts"
   ],
   "migrations": [
-     "src/migration/*.ts"
+     "src/migrations/*.ts"
   ],
   "cli": {
     "entitiesDir": "src/entities",
-    "migrationsDir": "src/migration"
+    "migrationsDir": "src/migrations"
   }
 }
