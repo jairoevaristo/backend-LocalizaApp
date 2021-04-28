@@ -28,11 +28,11 @@ export class createEstablishment1619565783622 implements MigrationInterface {
         },
         {
           name: 'latitude',
-          type: 'double precision'
+          type: 'double'
         },
         {
           name: 'longitude',
-          type: 'double precision'
+          type: 'double'
         },
         {
           name: 'created_at',

@@ -16,6 +16,9 @@ class Establishment {
   contact: string;
 
   @Column()
+  category: string;
+
+  @Column()
   latitude: number;
 
   @Column()
