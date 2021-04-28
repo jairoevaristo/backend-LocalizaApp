@@ -2,7 +2,7 @@ import { getCustomRepository, Repository } from 'typeorm';
 import { Establishment } from '../entities/Establishment';
 import { EstablishmentsRepository } from '../repositories/EstablishmentRepository';
 
-interface ICreateEstablishement {
+interface ICreateEstablishment {
   name: string;
   description: string;
   latitude: number;
@@ -11,7 +11,7 @@ interface ICreateEstablishement {
   category: string;
 }
 
-class EstablishementsServices {
+class EstablishmentsServices {
   private establishementRepository: Repository<Establishment>;
   
   constructor() {
@@ -25,7 +25,7 @@ class EstablishementsServices {
     latitude,
     longitude,
     name
-  }: ICreateEstablishement) {
+  }: ICreateEstablishment) {
     const establishment = this.establishementRepository.create({
       category,
       contact,
@@ -40,4 +40,4 @@ class EstablishementsServices {
   }
 }
 
-export { EstablishementsServices };
+export { EstablishmentsServices };
